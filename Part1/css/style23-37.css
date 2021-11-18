@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aside > p{
+    color: blueviolet;
+    margin-bottom: 50px;
+}
+/* .aside + p{
+    color: yellowgreen;
+} */
+.aside ~ p{
+    width: 80%;
+    margin: auto;
+    color: rgb(205, 177, 50);
+    padding-bottom: 20px;
+}
+.inherit strong{
+    color: rgb(205, 50, 89);
+}
