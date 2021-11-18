@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+        </div>
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+    </form>
+    <form>
+        <input type="email" value="..." >
+        <textarea>Comment....</textarea>
+    </form>
+    <form>
+        <input type="text" list="countries">
+        <datalist id="countries">
+            <option data-value="1">Australia</option>
+            <option>Canada</option>
+            <option>India</option>
+            <option>United States</option>
+        </datalist>
+    </form>
+    <!--drop-down-->
+    <form>
+        <select>
+            <optgroup label="Front-end Courses">
+                <option value="">Select a Course...</option>
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JavaScript</option>
+            </optgroup>
+            <optgroup label="Back-end Courses">
+                <option value="">Select a Course...</option>
+                <option value="1">Node.js</option>
+                <option value="2">PHP</option>
+                <option value="3">Python</option>
+            </optgroup>
+            
+        </select>
+    </form>
+
+    <!--check box-->
+    <form>
+        <div>
+            <input type="checkbox" id="front-end">
+            <label class="label-inline" for="front-end">Front-end</label>
+        </div>
+        <div>
+            <input type="checkbox" id="front-end">
+            <label class="label-inline" for="Back-end">Back-end</label>
+        </div>
+        
+    </form>
+
+    <!--Radio button-->
+    <form>
+        <div>
+            <input type='radio' name="membership" id="silver" checked>
+            <label for="silver" class="label-inline">Silver</label>
+        </div>
+        <div>
+            <input type='radio' name="membership" id="gold">
+            <label for="goldr" class="label-inline">Gold</label>
+        </div>
+    </form>
+
+    <!--Sliders-->
+    <form>
+        <input type="range" min="0" max="100" value="90">
+    </form>
+
+    <!--File input-->
+    <form>
+        <input type="file" accept=".jpg">
+    </form>
+
+    <!--Grouping related fields-->
+    <form>
+        <fieldset>
+            <legend>Billing Address</legend>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Payment</legend>
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </fieldset>
+    </form>
+
+    <!--Hidden field-->
+    <form>
+        <input type="hidden" name="course-id" value="12345">
+    </form>
+
+    <!--Data Validation-->
+    <form>
+        <input type="Text" required maxlength="10" minlength="3">
+        <button type="submit">Submit</button>
+        <input type="email" required maxlength="10" minlength="3">
+        <button type="submit">Submit</button>
+        <input type="number" required maxlength="10" minlength="3">
+        <button type="submit">Submit</button>
+        <input type="date" required maxlength="10" minlength="3">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!--Submitting form-->
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <button type="submit"> Submit</button>
+    </form>
+    
+</body>
+</html>
